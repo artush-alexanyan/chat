@@ -5,18 +5,23 @@ import vuetify from './plugins/vuetify'
 import firebase from 'firebase'
 import 'firebase/auth'
 import 'firebase/firestore'
+import { EmojiPicker } from 'vue-emoji-picker'
+Vue.use(EmojiPicker)
+
+Vue.use(EmojiPicker)
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAY_ekc5_-9Y-QvDtsOegWSQ2LXiJZpsrY",
-  authDomain: "chat-app-faf9a.firebaseapp.com",
-  databaseURL: "https://chat-app-faf9a.firebaseio.com",
-  projectId: "chat-app-faf9a",
-  storageBucket: "chat-app-faf9a.appspot.com",
-  messagingSenderId: "218089494190",
-  appId: "1:218089494190:web:4b363dae665736086dbf3f"
+  apiKey: "AIzaSyAIiSHXoEYu_UsKDEjG2pK3uW8YMKCFQh0",
+  authDomain: "vuetify-6a36e.firebaseapp.com",
+  databaseURL: "https://vuetify-6a36e.firebaseio.com",
+  projectId: "vuetify-6a36e",
+  storageBucket: "vuetify-6a36e.appspot.com",
+  messagingSenderId: "644137798508",
+  appId: "1:644137798508:web:0f5176fc2d8b6176fa4149"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
+firebase.initializeApp(firebaseConfig);
 
 Vue.config.productionTip = false
 
